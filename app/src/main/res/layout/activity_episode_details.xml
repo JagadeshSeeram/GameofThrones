@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="episode"
+            type="com.example.gameofthrones.episodes.models.Episode" />
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_10dp"
+        android:paddingRight="@dimen/_10dp"
+        android:useDefaultMargins="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Text_Episode_Details"
+                android:text="AirDate" />
+
+            <TextView
+                style="@style/Text_Episode_Details"
+                android:text="@{episode.air_date}" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Text_Episode_Details"
+                android:text="Episode" />
+
+            <TextView
+                style="@style/Text_Episode_Details"
+                android:text="@{String.valueOf(episode.episode_number)}" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Text_Episode_Details"
+                android:text="Season" />
+
+            <TextView
+                style="@style/Text_Episode_Details"
+                android:text="@{String.valueOf(episode.season_number)}" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Text_Episode_Details"
+                android:text="Vote Average" />
+
+            <TextView
+                style="@style/Text_Episode_Details"
+                android:text="@{String.valueOf(episode.vote_average)}" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Text_Episode_Details"
+                android:text="Overview" />
+
+            <TextView
+                style="@style/Text_Episode_Details"
+                android:text="@{episode.overview}" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>
