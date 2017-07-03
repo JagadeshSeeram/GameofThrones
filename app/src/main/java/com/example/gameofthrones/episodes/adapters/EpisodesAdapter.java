@@ -60,6 +60,13 @@ public class EpisodesAdapter extends RecyclerView.Adapter<EpisodesAdapter.Episod
         return episodes.size();
     }
 
+    public Episode getItem(int position) {
+        if (episodes != null && episodes.size() > position) {
+            return episodes.get(position);
+        }
+        return null;
+    }
+
     /**
      * ViewHolder to represent the data into the RecyclerView
      */

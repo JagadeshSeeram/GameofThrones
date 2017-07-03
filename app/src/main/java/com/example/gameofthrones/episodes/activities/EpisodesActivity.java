@@ -37,6 +37,22 @@ public class EpisodesActivity extends AppCompatActivity implements EpisodeView {
     }
 
     /**
+     * Return the count of the Recyclerview which will help for the test cases
+     *
+     * @return
+     */
+    public int getCount() {
+        if (episodesAdapter == null) {
+            return 0;
+        }
+        return episodesAdapter.getItemCount();
+    }
+
+    public Episode getEpisode(int position) {
+        return episodesAdapter.getItem(position);
+    }
+
+    /**
      * Initialze the Views
      */
     private void initViews() {
