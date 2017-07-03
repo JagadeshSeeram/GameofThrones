@@ -23,11 +23,11 @@
             android:orientation="horizontal">
 
             <TextView
-                style="@style/Text_Episode_Details"
-                android:text="AirDate" />
+                style="@style/Text_Episode_Details_Key"
+                android:text="@string/airdate" />
 
             <TextView
-                style="@style/Text_Episode_Details"
+                style="@style/Text_Episode_Details_Value"
                 android:text="@{episode.air_date}" />
         </LinearLayout>
 
@@ -37,11 +37,11 @@
             android:orientation="horizontal">
 
             <TextView
-                style="@style/Text_Episode_Details"
-                android:text="Episode" />
+                style="@style/Text_Episode_Details_Key"
+                android:text="@string/episode" />
 
             <TextView
-                style="@style/Text_Episode_Details"
+                style="@style/Text_Episode_Details_Value"
                 android:text="@{String.valueOf(episode.episode_number)}" />
         </LinearLayout>
 
@@ -51,11 +51,11 @@
             android:orientation="horizontal">
 
             <TextView
-                style="@style/Text_Episode_Details"
-                android:text="Season" />
+                style="@style/Text_Episode_Details_Key"
+                android:text="@string/season" />
 
             <TextView
-                style="@style/Text_Episode_Details"
+                style="@style/Text_Episode_Details_Value"
                 android:text="@{String.valueOf(episode.season_number)}" />
 
         </LinearLayout>
@@ -66,11 +66,11 @@
             android:orientation="horizontal">
 
             <TextView
-                style="@style/Text_Episode_Details"
-                android:text="Vote Average" />
+                style="@style/Text_Episode_Details_Key"
+                android:text="@string/vote_average" />
 
             <TextView
-                style="@style/Text_Episode_Details"
+                style="@style/Text_Episode_Details_Value"
                 android:text="@{String.valueOf(episode.vote_average)}" />
 
         </LinearLayout>
@@ -81,11 +81,11 @@
             android:orientation="horizontal">
 
             <TextView
-                style="@style/Text_Episode_Details"
-                android:text="Overview" />
+                style="@style/Text_Episode_Details_Key"
+                android:text="@string/overview" />
 
             <TextView
-                style="@style/Text_Episode_Details"
+                style="@style/Text_Episode_Details_Value"
                 android:text="@{episode.overview}" />
         </LinearLayout>
     </LinearLayout>

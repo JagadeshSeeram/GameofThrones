@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Game of Thrones</string>
     <string name="loading">Loading..</string>
+    <string name="airdate">AirDate:</string>
+    <string name="episode">Episode:</string>
+    <string name="season">Season:</string>
+    <string name="vote_average">Vote Average:</string>
+    <string name="overview">Overview:</string>
 </resources>
